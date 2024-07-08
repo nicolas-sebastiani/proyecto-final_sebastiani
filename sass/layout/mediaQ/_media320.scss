@@ -1,0 +1,93 @@
+@media (max-width: 320px) {
+    .display320 {
+        display: none;
+    }
+    .soporte {
+        .soporte__title h2{
+            display: none;
+        }
+        .soporte__container div img{
+            padding: 10px;
+            width: 100px;
+            height: auto;
+        }
+    }
+    .container-video {
+        @include grid (repeat(1,100%),repeat(20,6rem),100vw,48rem);
+        margin: 0;
+        .video-wrapper1 {
+            grid-row: 1/8;
+            div {
+            gap: 5px;
+            display: block;
+            }
+        }
+        .video-wrapper2 div{
+            display: none;
+        }
+        .video-wrapper3 div {
+            display: none;
+        }
+        
+    }
+    .container {
+        .container__piloto .piloto-img {
+            margin: 0;
+            padding: 0;
+        }
+        .container__terran .terran-img {
+            margin: 0;
+            padding: 0;
+        }
+        .container__displays .displays-img {
+            margin: 0;
+            padding: 0;
+        }
+        .container__rowclean .rowclean-img {
+            margin: 0;
+            padding: 0;
+        }
+        .container__displaysrowcond .rowcond-img {
+            margin: 0;
+            padding: 0;
+        }
+        .container__can .can-img {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .signin {
+        @include grid (repeat(1,100%),repeat(4,8rem),100vw,34rem);
+        justify-content: center;
+            .signin__form {
+            justify-self: center;
+            grid-column: 1/1;
+            grid-row: 2/4;
+            border: 1px solid white;
+            border-radius: 5px;
+            backdrop-filter: blur(3px);
+            width: 205px;
+            height: 350px;
+            box-shadow: 5px 5px 5px black;
+            .registerlink p {
+                font-size: map-get($map:$fontsize,$key:m);
+            }
+            .input-box input {
+                width: 150px;
+                height: 30px;
+                font-size: map-get($map: $fontsize, $key: m);
+                font-family: 'jura',sans-serif;
+            }
+            .remember {
+                font-size: map-get($map: $fontsize, $key: m);
+            }
+            .signin__button {
+                cursor: pointer;
+                justify-self: center;
+                font-size: map-get($map: $fontsize, $key: m);
+                max-width: 100px; 
+                width: 100%; 
+            }
+        }
+    }
+}

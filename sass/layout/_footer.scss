@@ -1,0 +1,13 @@
+/* ----------------------------------- footer ----------------------------------- */
+
+.animation {
+    &:hover {
+        transform: scale(1.2);
+        transition: transform 200ms linear;
+        color: map-get($map: $colors, $key:font-colorcl);
+    }
+}
+
+.iconcolor {
+    color: map-get($map:$colors,$key:font-colorcl)
+}

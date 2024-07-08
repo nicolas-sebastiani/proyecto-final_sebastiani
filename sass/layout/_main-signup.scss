@@ -1,0 +1,75 @@
+.signin {
+    @include grid (repeat(12,1fr),repeat(5,8rem),100vw,38rem);
+    .signin__fondo {
+        grid-column: 1/13;
+        grid-row: 1/8;
+        z-index: -1;
+        img {
+            width: 100vw;
+            height: 38rem;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .signin__form {
+        grid-column: 6/10;
+        grid-row: 2/7;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        backdrop-filter: blur(3px);
+        width: 410px;
+        height: 300px;
+        box-shadow: 5px 5px 5px black;
+        .registerlink p {
+            color: map-get($map:$colors,$key:font-colorcl);
+            font-family: 'jura', sans-serif;
+            font-size: map-get($map:$fontsize,$key:l);
+            a {
+                font-weight: bold;
+                text-decoration: none;
+                color: map-get($map:$colors,$key:font-colorcl);
+            }
+                &:hover {
+                    transform: scale(1.1);
+                    transition: transform 200ms linear;
+                }
+        }
+        .input-box input {
+            width: 350px;
+            height: 40px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: map-get($map: $fontsize, $key: l);
+            font-family: 'jura',sans-serif;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+        .remember {
+            color: map-get($map: $colors,$key:dark-grey);
+            font-family: 'jura', sans-serif;
+            font-size: map-get($map: $fontsize, $key: l);
+            font-weight: 600;
+            margin: 5px;
+        }
+        .signin__button {
+            cursor: pointer;
+            font-size: map-get($map: $fontsize, $key: l);
+            margin-top: 10px;
+            margin-left: 10px;
+            border-radius: 5px;
+            line-height: 2.5rem;
+            max-width: 350px; 
+            width: 100%; 
+            font-family: 'jura', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            &:hover{
+                transform: scale(1.1);
+                transition: transform 200ms linear;
+            }
+        }
+    }
+}
