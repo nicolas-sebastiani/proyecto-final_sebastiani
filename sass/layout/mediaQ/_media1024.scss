@@ -235,7 +235,7 @@
             justify-self: center;
             align-self: center;
             h2 {
-                font-size: map-get($map:$fontsize,$key:xxl);
+                font-size: 3rem;
                 font-family: 'jura', sans-serif;
                 font-weight: bolder;
                 text-align: left;
@@ -262,7 +262,7 @@
                 justify-self: center;
                 align-self: center;
                 h2 {
-                    font-size: map-get($map:$fontsize, $key:xxl);
+                    font-size: 3rem;
                     font-weight: bolder;
                     font-family: 'jura',sans-serif;
                 }
